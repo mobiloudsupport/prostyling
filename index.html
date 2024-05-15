@@ -165,51 +165,47 @@
             height: auto;
         }
 
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 1.5em;
-        }
-
         .options-wrapper {
             display: flex;
             flex-direction: column;
             gap: 1em;
             width: 100%;
-            max-width: 300px;
+            max-width: 400px;
         }
 
         .options-wrapper>li {
             background-color: #419fde;
             color: #ffffff;
-            border-radius: 5px;
+            border-radius: 10px;
             overflow: hidden;
-        }
-
-        .option button {
-            width: 100%;
-            padding: 1em;
-            background: transparent;
-            border: none;
-            color: inherit;
-            font: inherit;
-            cursor: pointer;
-            display: block;
-            text-align: left;
-            font-size: 1em;
-            transition: background-color 0.3s;
+            font-size: 1.5em;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .options-wrapper>li:nth-child(2) {
             background-color: #b57ad9;
         }
 
-        .option button:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+        .option button {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            color: inherit;
+            font: inherit;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: inherit;
+            transition: background-color 0.3s;
         }
 
-        .option button span {
-            display: block;
-            padding-left: 1em;
+        .option button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
@@ -219,7 +215,6 @@
         <div class="logo">
             <img src="https://prostylingtools.com/cdn/shop/files/newcolorsPST_300x@2x.png?v=1632343366" alt="Brand Logo">
         </div>
-        <h2>Shop with us in...</h2>
         <ul class="options-wrapper">
             <li class="enabled">
                 <div class="option default">
@@ -240,4 +235,3 @@
 </body>
 
 </html>
-
