@@ -5,60 +5,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brand Store - Select your store</title>
     <style>
-        html, body {
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
             margin: 0;
-            padding: 0;
+            padding: 0
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block
+        }
+
+        body {
+            line-height: 1
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        blockquote,
+        q {
+            quotes: none
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: none
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        html,
+        body {
+            height: 100%;
+            background-color: #ffffff;
+            color: #000;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        main.choice {
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             height: 100%;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            margin-bottom: 2em;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .options-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .options-wrapper>li {
+            background-color: #419fde;
+            color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 1.5em;
+            height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .container {
-            text-align: center;
+        .options-wrapper>li:nth-child(2) {
+            background-color: #b57ad9;
         }
 
-        .logo img {
-            max-width: 150px;
-            margin-bottom: 20px;
-        }
-
-        .button {
-            display: block;
-            width: 200px;
-            padding: 15px;
-            margin: 10px auto;
-            font-size: 16px;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
+        .option button {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            color: inherit;
+            font: inherit;
             cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: inherit;
+            transition: background-color 0.3s;
         }
 
-        .button.enabled {
-            background-color: #007bff;
+        .option button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
-        .button.disabled {
-            background-color: #6c757d;
-            cursor: not-allowed;
-        }
+.disabled {
+    background-color: #c4c4c4;
+}
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <main class="choice">
         <div class="logo">
             <img src="https://prostylingtools.com/cdn/shop/files/newcolorsPST_300x@2x.png?v=1632343366" alt="Brand Logo">
         </div>
-        <a class="button enabled" href="#" onclick='selectConfigurationButton.performClick("6P2JRl");'>Consumer</a>
-        <a class="button disabled" href="#">Wholesale</a>
-    </div>
+        <ul class="options-wrapper">
+            <li class="enabled">
+                <div class="option default">
+                    <button onClick='selectConfigurationButton.performClick("6P2JRl");'>
+                        <span>Consumer</span>
+                    </button>
+                </div>
+            </li>
+            <li class="enabled">
+                <div class="option">
+                    <button class="disabled" >
+                        <span>Wholesale</span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </main>
 </body>
 
 </html>
