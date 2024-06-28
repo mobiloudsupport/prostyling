@@ -1,8 +1,13 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/metropolis-2" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Brand Store - Select your store</title>
     <style>
         html,
@@ -152,90 +157,4 @@
             height: 100%;
             text-align: center;
             padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        .logo {
-            margin-bottom: 2em;
-        }
-
-        .logo img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .options-wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .options-wrapper>li {
-            background-color: #419fde;
-            color: #ffffff;
-            border-radius: 10px;
-            overflow: hidden;
-            font-size: 1.5em;
-            height: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .options-wrapper>li:nth-child(2) {
-            background-color: #b57ad9;
-        }
-
-        .option button {
-            width: 100%;
-            height: 100%;
-            background: transparent;
-            border: none;
-            color: inherit;
-            font: inherit;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: inherit;
-            transition: background-color 0.3s;
-        }
-
-        .option button:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-.disabled {
-    background-color: #c4c4c4;
-}
-    </style>
-</head>
-
-<body>
-    <main class="choice">
-        <div class="logo">
-            <img src="https://prostylingtools.com/cdn/shop/files/newcolorsPST_300x@2x.png?v=1632343366" alt="Brand Logo">
-        </div>
-        <ul class="options-wrapper">
-            <li class="enabled">
-                <div class="option default">
-                    <button onClick='selectConfigurationButton.performClick("6P2JRl");'>
-                        <span>Consumer</span>
-                    </button>
-                </div>
-            </li>
-            <li class="enabled">
-                <div class="option">
-                    <button class="disabled" >
-                        <span>Wholesale</span>
-                    </button>
-                </div>
-            </li>
-        </ul>
-    </main>
-</body>
-
-</html>
+            margin:
